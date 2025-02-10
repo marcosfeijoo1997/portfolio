@@ -11,7 +11,16 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        "dark":"rgb(9 26 40) "
+
       },
+   fontSize:{
+    "custom":"18px"
+   },
+   fontFamily: {
+    custom: ['"Roboto"', 'sans-serif'], // Fuente personalizada
+  },
+   
     },
   },
   plugins: [],
