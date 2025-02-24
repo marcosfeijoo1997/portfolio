@@ -1,10 +1,10 @@
 import React from 'react'
-import AboutMe from '../components/AboutMe'
+import Carousel from '@/components/Carousel'
 
 const page = () => {
   return (
-    <div>
-    <AboutMe/>
+    <div >
+      <Carousel/>
     </div>
   )
 }

@@ -1,24 +1,14 @@
 "use client"
 import React from 'react';
-
+import Link from 'next/link'; 
 const Navbar = () => {
-  const scrollToSection = (id: string, event: React.MouseEvent) => {
-    event.preventDefault(); 
-    
-    const element = document.getElementById(id);
-    if (element) {
-      window.scrollTo({
-        top: element.offsetTop,
-        behavior: "smooth",
-      });
-    }
-  };
+
 
   return (
-    <header className="fixed flex w-full mx-auto py-4 bg-dark bg-opacity-70 text-white text-custom">
+    <header className="fixed z-[100] flex w-full mx-auto p-3 bg-dark text-white text-custom">
       <ul className="flex mx-10 w-full gap-10">
-        <li><a href="#inicio" onClick={(e) => scrollToSection("inicio", e)}>Inicio</a></li>
-        <li><a href="#about-me" onClick={(e) => scrollToSection("about-me", e)}>Sobre mí</a></li>
+        <li><Link href="/">Inicio</Link></li>
+        <li className='w-[74px]'><Link href="/about">Sobre mí</Link></li>
         <li>Conocimientos</li>
         <li>Portafolio</li>
         <li>Contacto</li>
