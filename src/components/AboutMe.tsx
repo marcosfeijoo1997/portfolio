@@ -1,17 +1,23 @@
 "use client"
 import React, { JSX, useEffect } from 'react'
 import {Tecnologias, HerramientasBack,DataBase} from './SvgContainer'
+import {TextCustomColor,Container,CardContainer} from '@/components/StylesPredeterm'
 
 
 
 
 const AboutMe = () => {
+  const textWhite=TextCustomColor()
+  const Contenedor=Container()
+  const CardLight=CardContainer()
+
+
 
   return (
-    <div className='flex text-white'>
-    <div className='contenedor'></div>
-    <div className="flex flex-col relative text-2xl mt-16 w-2/3  mx-auto gap-4  mt-16 h-screen" id='about-me'>
-      <h1 className='text-5xl'>Sobre  mi</h1>
+    <div className={`flex ${textWhite}`}>
+    <div className={`${Contenedor}`}></div>
+    <div className="flex flex-col relative text-xl mt-16 w-2/3  mx-auto gap-4  mt-16 h-screen" id='about-me'>
+      <h1 className='text-4xl '>Sobre  mi</h1>
 <p> Soy un desarrollador front-end con experiencia en el diseño y desarrollo de sitios web y aplicaciones interactivas. Mi objetivo principal es crear experiencias de usuario atractivas y funcionales utilizando las últimas tecnologías web.</p> 
 
 
@@ -27,7 +33,7 @@ Estoy familiarizado con el control de versiones y utilizo Git y GitHub para cola
 {Object.values(Tecnologias).map((elem) => (
   <div key={elem.title}>
 
- <div className='w-full h-full bg-gray-600 flex  items-center rounded-lg min-w-[170px]'>
+ <div className={`w-full h-full  flex  items-center rounded-lg min-w-[170px] ${CardLight}`}>
  <p className='m-4'>{elem.svg()} </p>
  <p>{elem.title}</p>
  </div>
@@ -44,7 +50,7 @@ Estoy familiarizado con el control de versiones y utilizo Git y GitHub para cola
 {Object.values(HerramientasBack).map((elem) => (
   <div key={elem.title}>
 
-<div className='w-full h-full bg-gray-600 flex  items-center rounded-lg min-w-[170px]'>
+<div className={`w-full h-full  flex  items-center rounded-lg min-w-[170px] ${CardLight}`}>
  <p className='m-4'>{elem.svg()} </p>
  <p>{elem.title}</p>
  </div>
@@ -56,12 +62,12 @@ Estoy familiarizado con el control de versiones y utilizo Git y GitHub para cola
 </div>
 
 <h1 className='text-4xl w-2/3 mx-auto'>Base de datos</h1>
-<div className='grid grid-cols-1 lg:grid-cols-2 gap-2 w-2/3 mx-auto'>
+<div className='grid grid-cols-1 lg:grid-cols-2 gap-2 w-2/3 mx-auto  pb-8'>
 {Object.values(DataBase).map((elem) => (
   <div key={elem.title}>
 
 
-<div className='w-full h-full bg-gray-600 flex  items-center rounded-lg min-w-[170px]'>
+<div className={`w-full h-full  flex  items-center rounded-lg min-w-[170px] ${CardLight}`}>
  <p className='m-4'>{elem.svg()} </p>
  <p>{elem.title}</p>
  

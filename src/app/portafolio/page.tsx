@@ -1,11 +1,17 @@
+"use client"
 import React from 'react'
 import CardPortafolio from '@/components/CardPortafolio'
+import { TextCustomColor, BgCustomColor,Container } from '@/components/StylesPredeterm';
+
 
 const page = () => {
+  const textWhite=TextCustomColor()
+  const Contenedor=Container()
+
   return (
-    <div className="flex flex-col gap-20 h-screen">
-    <div className="contenedor"></div>
-    <div className="text-5xl  text-white relative w-full min-w-[500px] gap-6 mx-auto mt-40" id="inicio">
+    <div className="flex flex-col h-screen">
+    <div className={`${Contenedor}`}></div>
+    <div className={`text-5xl relative w-full min-w-[500px] mx-auto mt-20 ${textWhite}`} id="inicio">
         <CardPortafolio/>
 
         </div>
