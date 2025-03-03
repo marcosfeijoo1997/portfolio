@@ -19,6 +19,7 @@ export default {
       
    fontSize:{
     "custom":"18px"
+    
    },
    fontFamily: {
     sans: ['"Roboto"', '"Arial"', 'sans-serif'],

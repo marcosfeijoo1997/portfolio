@@ -11,6 +11,7 @@ import img2 from '@/assets/Pagina2.png'
 import img3 from '@/assets/Pagina3.png'
 import img4 from '@/assets/Pagina4.png'
 import img5 from '@/assets/Pagina5.png'
+import Link from 'next/link';
 
 
 export default function App() {
@@ -21,6 +22,7 @@ export default function App() {
         grabCursor={true}
         centeredSlides={true}
         slidesPerView={'auto'}
+        initialSlide={2}
         coverflowEffect={{
           rotate: 50,
           stretch: 0,
@@ -38,7 +40,7 @@ export default function App() {
        <div className='bg-dark text-white rounded-b-md  gap-2 flex flex-col pt-2 pb-4 '>
        <h1 className='text-2xl mx-auto'>Ferreteria Dufer</h1>
        <p className='text-lg'>Proyecto realizado para ferreteria de forma freelance</p>
-       <button className='cursor-pointer bg-customblue rounded-xl p-1 w-64 mx-auto text-lg'>ver mas...</button>
+       <Link href="/portafolio"><button className='cursor-pointer bg-customblue rounded-xl p-1 w-64 mx-auto text-lg'>ver mas...</button></Link>
        
        </div>
         </SwiperSlide>
@@ -52,11 +54,21 @@ export default function App() {
        </div>
         </SwiperSlide>
         <SwiperSlide>
+       <Image src={img5} alt='img' className='rounded-t-md h-[200px]'/>
+       <div className='bg-dark text-white rounded-b-md  gap-2 flex flex-col pt-2 pb-4 '>
+       <h1 className='text-2xl mx-auto'>Distribuidora de caños</h1>
+       <p className='text-lg'>Proyecto realizado de manera freelance para empresa distribuidora de caños</p>
+   <Link href="/portafolio"><button className='cursor-pointer bg-customblue rounded-xl p-1 w-64 mx-auto text-lg'>ver mas...</button></Link>
+       
+       </div>
+        </SwiperSlide>
+     
+        <SwiperSlide>
        <Image src={img3} alt='img' className='rounded-t-md h-[200px]'/>
        <div className='bg-dark text-white rounded-b-md  gap-2 flex flex-col pt-2 pb-4 '>
        <h1 className='text-2xl mx-auto'>Calculadora de angulos</h1>
        <p className='text-lg'>Proyecto realizado para el calculo de angulos en corte en X</p>
-       <button className='cursor-pointer bg-customblue rounded-xl p-1 w-64 mx-auto text-lg'>ver mas...</button>
+   <Link href="/portafolio"><button className='cursor-pointer bg-customblue rounded-xl p-1 w-64 mx-auto text-lg'>ver mas...</button></Link>
        
        </div>
         </SwiperSlide>
@@ -65,20 +77,10 @@ export default function App() {
        <div className='bg-dark text-white rounded-b-md  gap-2 flex flex-col pt-2 pb-4 '>
        <h1 className='text-2xl mx-auto'>4 en linea</h1>
        <p className='text-lg'>Juego conocido para jugar de a 2 en el mismo ordenador</p>
-       <button className='cursor-pointer bg-customblue rounded-xl p-1 w-64 mx-auto text-lg'>ver mas...</button>
+   <Link href="/portafolio"><button className='cursor-pointer bg-customblue rounded-xl p-1 w-64 mx-auto text-lg'>ver mas...</button></Link>
        
        </div>
         </SwiperSlide>
-        <SwiperSlide>
-       <Image src={img5} alt='img' className='rounded-t-md h-[200px]'/>
-       <div className='bg-dark text-white rounded-b-md  gap-2 flex flex-col pt-2 pb-4 '>
-       <h1 className='text-2xl mx-auto'>Distribuidora de caños</h1>
-       <p className='text-lg'>Proyecto realizado de manera freelance para empresa distribuidora de caños</p>
-       <button className='cursor-pointer bg-customblue rounded-xl p-1 w-64 mx-auto text-lg'>ver mas...</button>
-       
-       </div>
-        </SwiperSlide>
-     
       </Swiper>
     </>
   );

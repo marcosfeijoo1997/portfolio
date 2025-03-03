@@ -31,3 +31,12 @@ body {
   display: block;
   width: 100%;
 }
+.customTitle
+{
+  font-size: 48px;
+  color: white;
+}
+.customText{
+font-size: 26px;
+color: white;
+}

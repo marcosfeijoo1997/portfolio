@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       
-      <body className="background-fix" >
+      <body>
         
       <Navbar/>
         {children}
