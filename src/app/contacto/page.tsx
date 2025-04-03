@@ -12,7 +12,7 @@ const page = () => {
     <div className={`${Contenedor}`}></div>
     
    
-    <div className={`flex flex-col relative text-2xl mt-16 w-2/3 mx-auto gap-4  mt-16 h-screen max-w-md ${TextCustom}`}id='contacto'>
+    <div className={`flex flex-col relative text-2xl mt-16 w-2/3 mx-auto gap-4 h-screen max-w-md ${TextCustom}`}id='contacto'>
     <h1 className={`font-normal text-4xl  ${TextCustom} `}>Contacto</h1>
 
   
@@ -23,7 +23,7 @@ const page = () => {
   <h1 className='mx-auto'>Otras redes</h1>
   <div className={`flex flex-col sm:flex-row sm:p-6 p-2 bg-gray-300 rounded-lg text-center 
 ${CardLight}`}>
-  <Link href="https://mail.google.com/mail/?view=cm&to=marcosfeijoo97@gmail.com&su=Consulta&body=Hola, quiero más información." className='w-1/2 flex mx-auto justify-center'>
+  <Link href="https://mail.google.com/mail/?view=cm&to=marcosfeijoo97@gmail.com&su=Consulta&body=Hola, quiero más información acerca de tu perfil." className='w-1/2 flex mx-auto justify-center'>
    
   <svg xmlns="http://www.w3.org/2000/svg" className='w-8 h-8 mx-2' aria-label="Gmail" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#ffffff"/><path d="M158 391v-142l-82-63V361q0 30 30 30" fill="#4285f4"/><path d="M 154 248l102 77l102-77v-98l-102 77l-102-77" fill="#ea4335"/><path d="M354 391v-142l82-63V361q0 30-30 30" fill="#34a853"/><path d="M76 188l82 63v-98l-30-23c-27-21-52 0-52 26" fill="#c5221f"/><path d="M436 188l-82 63v-98l30-23c27-21 52 0 52 26" fill="#fbbc04"/></svg>Gmail</Link>
   <Link href="https://www.linkedin.com/in/marcos-feijoo-b80b2b175/" className='w-1/2 flex mx-auto justify-center'>

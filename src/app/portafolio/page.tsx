@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 import CardPortafolio from '@/components/CardPortafolio'
-import { TextCustomColor, BgCustomColor,Container } from '@/components/StylesPredeterm';
+import { TextCustomColor,Container } from '@/components/StylesPredeterm';
 
 
 const page = () => {

@@ -13,6 +13,7 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
         "dark":"rgb(9 26 40) ",
+
         customblue:"rgb(1, 42, 142)"
 
       },

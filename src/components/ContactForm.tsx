@@ -39,7 +39,7 @@ export default function ContactForm() {
       setSuccess(true);
       setFormData({ name: "", message: "", email:"" });
     } catch (err) {
-      setError("No se pudo enviar el mensaje. Inténtalo más tarde.");
+      setError(`${err}:No se pudo enviar el mensaje. Inténtalo más tarde.`);
     } finally {
       setLoading(false);
     }

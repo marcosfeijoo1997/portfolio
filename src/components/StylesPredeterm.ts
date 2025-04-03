@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { useThemeStore } from '@/app/store/LightStore'
 
 export const TextCustomColor = () => {

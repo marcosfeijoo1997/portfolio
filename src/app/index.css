@@ -8,7 +8,7 @@ More comprehensive version at shenanigans.shoghisimon.ca/collection/css-rain-bg/
     width:100vw;
     height:100vh;
   content: "";
-  position: fixed;
+  position: absolute;
   inset: 0;
   z-index: 1;
   background-image: radial-gradient(

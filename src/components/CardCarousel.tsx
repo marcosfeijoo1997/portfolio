@@ -15,18 +15,19 @@ export default function CustomCarousel() {
   return (
     <Swiper
       modules={[Navigation]}
-      slidesPerView={3} // Muestra 3 imágenes a la vez
-      centeredSlides={true} // Centra el slide activo
-      navigation // Botones de navegación
-      loop={true} // Hace que sea un carrusel infinito
-      spaceBetween={20} // Espacio entre imágenes
+      slidesPerView={3} 
+      centeredSlides={true} 
+      navigation 
+      loop={true} 
+      spaceBetween={20} 
+    
       breakpoints={{
-        768: { slidesPerView: 3 }, // 3 imágenes en pantallas medianas/grandes
-        480: { slidesPerView: 1 }, // 1 imagen en móviles
+        768: { slidesPerView:3 }, // 3 imágenes en pantallas medianas/grandes
+        480: { slidesPerView: 1 }, 
       }}
     >
       {images.map((img, index) => (
-        <SwiperSlide key={index} className="transition-transform duration-300">
+        <SwiperSlide key={index} className="transition-transform duration-300" > 
           <div className="relative w-full h-64">
             <Image
               src={img}
