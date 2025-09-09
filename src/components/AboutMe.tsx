@@ -16,7 +16,7 @@ const AboutMe = () => {
   return (
     <div className={`flex ${textWhite}`}>
     <div className={`${Contenedor}`}></div>
-    <div className="flex flex-col relative text-xl mt-16 w-[1200px]  mx-auto gap-4  mt-16 h-screen" id='about-me'>
+    <div className="flex flex-col relative text-xl w-[1200px]  mx-auto gap-4  mt-16 h-screen" id='about-me'>
       <h1 className='text-4xl '>Sobre  mi</h1>
 <p> Soy un desarrollador front-end con experiencia en el diseño y desarrollo de sitios web y aplicaciones interactivas. Mi objetivo principal es crear experiencias de usuario atractivas y funcionales utilizando las últimas tecnologías web.</p> 
 
